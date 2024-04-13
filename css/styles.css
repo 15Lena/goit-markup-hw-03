@@ -14,8 +14,6 @@ body {
   line-height: 1.71429;
   letter-spacing: 0.03em;
   color: #757575;
-  width: 1600px;
-  height: 2346px;
   background: #fff;
 }
 
@@ -61,14 +59,12 @@ img {
 }
 
 .header {
-  border-bottom: var(--blue--);
+  border-bottom: 1px, var(--blue--);
 }
 
 .logo-header {
   align-items: center;
-  margin-top: 24px;
   margin-right: 93px;
-  margin-bottom: 25px;
 }
 
 .logo,
@@ -99,9 +95,7 @@ img {
 .navigation-list {
   display: flex;
   align-items: center;
-  margin-top: 32px;
   margin-right: 344px;
-  margin-bottom: 32px;
 }
 
 .item-navigation {
@@ -149,7 +143,6 @@ img {
 }
 
 .item-contacts {
-  display: block;
   margin-right: 50px;
 }
 
@@ -184,14 +177,10 @@ img {
 
 .button {
   background: var(--grey--);
-}
-
-.container-button {
-  display: flex;
-  width: 1200px;
-  height: 600px;
-  flex-direction: column;
-  justify-content: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .title-button {
@@ -211,6 +200,7 @@ img {
 }
 
 .btn {
+  display: block;
   padding: 10px, 32px;
   max-width: 230px;
   max-height: 60px;
@@ -242,6 +232,7 @@ img {
   height: 98;
 }
 .item-feature {
+  width: 270px;
   justify-content: center;
   margin-right: 30px;
 }
@@ -266,6 +257,10 @@ img {
 }
 
 /*Чим ми займаємося*/
+
+.section-about {
+  padding-top: 0;
+}
 
 .section-title {
   font-weight: 700;
@@ -315,10 +310,10 @@ img {
   margin-right: 0;
 }
 
-.team-img {
-  margin-bottom: 30px;
+.box-team {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-
 .title-team {
   font-weight: 500;
   font-size: 16px;
@@ -333,30 +328,21 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   color: #757575;
-  margin-bottom: 30px;
 }
 
 /*Підвал*/
 
 .footer {
-  width: 1600px;
-  height: 252px;
   background: var(--grey--);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.contact {
-  margin-top: 20px;
-}
-
 .contacts-footer {
   color: var(--white--);
   font-style: normal;
-}
-
-.item-contacts {
-  padding-top: 9px;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 .link-contacts {
@@ -366,6 +352,7 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  margin-bottom: 9px;
 }
 
 /*Пoртфоліо*/
