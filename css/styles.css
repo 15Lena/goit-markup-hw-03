@@ -53,13 +53,13 @@ img {
 
 /*Верхня лінія*/
 
+.header {
+  border-bottom: 1px var(--blue--);
+}
+
 .header-container {
   display: flex;
   align-items: center;
-}
-
-.header {
-  border-bottom: 1px, var(--blue--);
 }
 
 .logo-header {
@@ -94,12 +94,13 @@ img {
 
 .navigation-list {
   display: flex;
-  align-items: center;
-  margin-right: 344px;
 }
 
 .item-navigation {
+  display: block;
   margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .item-navigation:last-child {
@@ -143,7 +144,10 @@ img {
 }
 
 .item-contacts {
+  display: block;
   margin-right: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .item-contacts:last-child {
@@ -298,6 +302,7 @@ img {
 }
 
 .item-team {
+  background: #fff;
   margin-right: 30px;
   border-radius: 0 0 4px 4px;
   border-bottom: 4px var(--bleak-grey-text--);
@@ -338,26 +343,31 @@ img {
   padding-bottom: 60px;
 }
 
+.contact {
+  margin-top: 20px;
+}
+
 .contacts-footer {
   color: var(--white--);
   font-style: normal;
-  margin-top: 20px;
+}
+
+.item-contacts-footer {
+  margin-top: 9px;
   margin-bottom: 9px;
 }
 
-.link-contacts {
+.link-contacts-footer {
   font-size: 14px;
   font-style: normal;
   line-height: 1.71429;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  margin-bottom: 9px;
 }
 
 /*Пoртфоліо*/
-/*
-align-items: center;*/
+
 /*filters*/
 
 .list-filters {
@@ -475,15 +485,19 @@ align-items: center;*/
 }
 
 .gruop-item {
-  flex-basis: calc((100%-30px) / 3);
-  border: 1px solid #eee;
+  flex-basis: auto;
   width: 370px;
-  height: 404px;
   background: #fff;
 }
 
 .link-project {
   text-decoration: none;
+}
+.project-portfolio {
+  padding: 20px 24px 20px 24px;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
 }
 
 .project-title {
@@ -493,7 +507,7 @@ align-items: center;*/
   letter-spacing: 0.06em;
   color: var(--bleak-grey-text--);
   text-decoration: none;
-  margin: 20px 24px 4px 24px;
+  margin-bottom: 4px;
 }
 
 .description-project {
@@ -501,5 +515,4 @@ align-items: center;*/
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: #757575;
-  margin: 0px 24px 20px 24px;
 }
