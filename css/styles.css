@@ -54,12 +54,13 @@ img {
 /*Верхня лінія*/
 
 .header {
-  border-bottom: 1px var(--blue--);
+  border-bottom: 1px solid var(--blue--);
 }
 
 .header-container {
   display: flex;
   align-items: center;
+  height: 80px;
 }
 
 .logo-header {
@@ -76,6 +77,8 @@ img {
   line-height: 31px;
   color: var(--blue--);
   text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-black {
@@ -99,8 +102,6 @@ img {
 .item-navigation {
   display: block;
   margin-right: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .item-navigation:last-child {
@@ -114,6 +115,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--bleak-grey-text--);
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link-navigation:hover,
@@ -146,8 +149,6 @@ img {
 .item-contacts {
   display: block;
   margin-right: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .item-contacts:last-child {
@@ -161,6 +162,8 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link-contacts-mail:hover,
@@ -345,16 +348,22 @@ img {
 
 .contact {
   margin-top: 20px;
+  height: 81px;
+  width: 231px;
 }
 
 .contacts-footer {
   color: var(--white--);
   font-style: normal;
+  margin-bottom: 9px;
 }
 
 .item-contacts-footer {
-  margin-top: 9px;
   margin-bottom: 9px;
+}
+
+.item-contacts-footer:last-child {
+  margin-bottom: 0px;
 }
 
 .link-contacts-footer {
